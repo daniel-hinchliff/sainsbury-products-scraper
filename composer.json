@@ -1,0 +1,10 @@
+{
+  "name": "daniel-hinchliff/sainsbury_products_scraper",
+  "description": "Sainsbury's product scraper",
+  "require": {
+    "sunra/php-simple-html-dom-parser": "1.5.*"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "4.*"
+  }
+}
