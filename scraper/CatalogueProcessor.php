@@ -13,7 +13,7 @@ class CatalogueProcessor extends Processor
 
     public function filter($url)
     {
-        return preg_match(ProductPagePattern, $url);
+        return START_PAGE_URL != $url;
     }
 
     public function process($content, $current_url)
