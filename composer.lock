@@ -4,9 +4,31 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "13f8df78b8458cd06c5851b5e99f1643",
-    "content-hash": "7bfa72f4f59e45ac4ebb5fae36ebad32",
+    "hash": "ad88b530d8f62b2f0fd0ec6000264fdd",
+    "content-hash": "87652898aa306042c679e4a6a218c288",
     "packages": [
+        {
+            "name": "daniel-hinchliff/php_web_crawler",
+            "version": "0.9.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/daniel-hinchliff/php_web_crawler.git",
+                "reference": "508967693377c0d0e2b0e98c7e69272b5e9e0b4d"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/daniel-hinchliff/php_web_crawler/zipball/508967693377c0d0e2b0e98c7e69272b5e9e0b4d",
+                "reference": "508967693377c0d0e2b0e98c7e69272b5e9e0b4d",
+                "shasum": ""
+            },
+            "type": "library",
+            "description": "A simple web crawling framework",
+            "support": {
+                "source": "https://github.com/daniel-hinchliff/php_web_crawler/tree/0.9.0",
+                "issues": "https://github.com/daniel-hinchliff/php_web_crawler/issues"
+            },
+            "time": "2016-04-21 20:36:41"
+        },
         {
             "name": "sunra/php-simple-html-dom-parser",
             "version": "v1.5.0",
