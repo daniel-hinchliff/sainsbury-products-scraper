@@ -18,6 +18,6 @@ $crawler->setUrlExtractor($extractor);
 $crawler->setQueue($url_queue);
 $crawler->crawl(0);
 
-file_put_contents('results.json', json_encode($processor->catalogue()));
+echo json_encode($processor->catalogue(), JSON_PRETTY_PRINT);
 
 
