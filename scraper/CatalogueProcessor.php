@@ -59,7 +59,14 @@ class CatalogueProcessor extends \Processor
 
     public function getElementText($html, $selector)
     {
-        return $html->find($selector, 0)->plaintext;
+        $element = $html->find($selector, 0);
+
+        if (empty($element))
+        {
+            throw new \Exception("Element [$selector] not found");
+        }
+        
+        return $element->plaintext;
     }
 
     public function catalogue()
