@@ -27,6 +27,15 @@ class ProcessorTest extends PHPUnit_Framework_TestCase
         $this->assertEquals('10.2kb', $processor->pageSize(str_pad('', 10152)));
     }
 
+    function testParsePrice()
+    {
+        $processor = new CatalogueProcessor();
+        $this->assertEquals(0, $processor->parseUnitPrice('&pound;0.00/unit'));
+        $this->assertEquals(1.8, $processor->parseUnitPrice('&pound;1.80/unit'));
+        $this->assertEquals(2.34, $processor->parseUnitPrice('&pound;2.34/unit'));
+        $this->assertEquals(2.34, $processor->parseUnitPrice('&pound;2.34/unit'));
+    }
+
     function testDataExtraction()
     {
         // Given

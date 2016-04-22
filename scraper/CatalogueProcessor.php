@@ -37,9 +37,14 @@ class CatalogueProcessor extends \Processor
 
     public function parseUnitPrice($html_price)
     {
-        $search = array('&pound;', '/unit');
+        preg_match('/[0-9]+\.[0-9]{2}/', $html_price, $matches);
 
-        return floatval(str_replace($search, '', $html_price));
+        if (empty($matches))
+        {
+            throw new \Exception("Invalid price [$html_price]");
+        }
+
+        return floatval($matches[0]);
     }
 
     public function formatPrice($price)
