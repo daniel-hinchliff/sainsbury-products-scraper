@@ -1,8 +1,10 @@
 <?php
 
+namespace ProductsScraper;
+
 use Sunra\PhpSimple\HtmlDomParser;
 
-class CatalogueUrlExtractor extends UrlExtractor
+class CatalogueUrlExtractor extends \UrlExtractor
 {
     public function extract($content, $current_url)
     {

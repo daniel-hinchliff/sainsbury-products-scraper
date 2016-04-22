@@ -1,8 +1,10 @@
 <?php
 
+namespace ProductsScraper;
+
 use Sunra\PhpSimple\HtmlDomParser;
 
-class CatalogueProcessor extends Processor
+class CatalogueProcessor extends \Processor
 {
     protected $total = 0;
     protected $products = array();

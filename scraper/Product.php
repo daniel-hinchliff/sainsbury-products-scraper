@@ -1,5 +1,7 @@
 <?php
 
+namespace ProductsScraper;
+
 class Product
 {
     public $title;
