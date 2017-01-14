@@ -1,7 +1,5 @@
 <?php
 
-require_once __DIR__ . '/../include.php';
-
 use ProductsScraper\CatalogueProcessor;
 use ProductsScraper\CatalogueProcessorHelper;
 

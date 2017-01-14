@@ -4,7 +4,7 @@ namespace ProductsScraper;
 
 use Sunra\PhpSimple\HtmlDomParser;
 
-class CatalogueProcessor extends \Processor
+class CatalogueProcessor extends \Crawler\Processor
 {
     protected $total = 0;
     protected $helper = null;

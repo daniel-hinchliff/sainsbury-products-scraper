@@ -1,1 +1,1 @@
-vendor/bin/phpunit scraper/
+vendor/bin/phpunit

@@ -1,6 +1,6 @@
 <?php
 
-require_once __DIR__ . '/../include.php';
+define('START_PAGE_URL', 'start_page_url');
 
 use ProductsScraper\CatalogueUrlExtractor;
 
