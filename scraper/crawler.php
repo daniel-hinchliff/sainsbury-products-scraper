@@ -5,8 +5,8 @@ namespace ProductsScraper;
 require_once __DIR__ . '/include.php';
 
 $url_queue = new \UrlsMemoryQueue(array(START_PAGE_URL));
+$processor = new CatalogueProcessor(new CatalogueProcessorHelper());
 $extractor = new CatalogueUrlExtractor();
-$processor = new CatalogueProcessor();
 
 $crawler = new \Crawler();
 $crawler->setProcessor($processor);

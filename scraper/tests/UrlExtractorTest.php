@@ -22,7 +22,7 @@ class UrlExtractorTest extends PHPUnit_Framework_TestCase
     
     function testExtractorDoesNotFindsLinksWhenNotOnStartPage()
     {
-        //Given
+        // Given
         $extractor = new CatalogueUrlExtractor();
         $input = "<div class='productInfo'><a href='http://url_a.com'>text</a></div>".
                  "<div class='productInfo'><a href='http://url_b.com'>text</a></div>";
@@ -36,7 +36,7 @@ class UrlExtractorTest extends PHPUnit_Framework_TestCase
 
     function testExtractorHandlesNoLinks()
     {
-        //Given
+        // Given
         $extractor = new CatalogueUrlExtractor();
         $input = "<div></div>";
 
