@@ -3,8 +3,9 @@
 define('START_PAGE_URL', 'start_page_url');
 
 use ProductsScraper\CatalogueUrlExtractor;
+use PHPUnit\Framework\TestCase;
 
-class UrlExtractorTest extends PHPUnit_Framework_TestCase
+class UrlExtractorTest extends TestCase
 {
     function testExtractorFindsLinksOnStartPage()
     {

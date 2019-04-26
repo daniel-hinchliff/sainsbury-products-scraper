@@ -2,8 +2,9 @@
 
 use ProductsScraper\CatalogueProcessor;
 use ProductsScraper\CatalogueProcessorHelper;
+use PHPUnit\Framework\TestCase;
 
-class ProcessorTest extends PHPUnit_Framework_TestCase
+class ProcessorTest extends TestCase
 {
     function testDataExtraction()
     {

@@ -1,8 +1,9 @@
 <?php
 
 use ProductsScraper\CatalogueProcessorHelper;
+use PHPUnit\Framework\TestCase;
 
-class ProcessorHelperTest extends PHPUnit_Framework_TestCase
+class ProcessorHelperTest extends TestCase
 {
     function testPriceFormat()
     {

@@ -4,15 +4,15 @@
   "repositories": [
         {
             "type": "vcs",
-            "url": "https://github.com/daniel-hinchliff/php_web_crawler"
+            "url": "https://github.com/daniel-hinchliff/php-web-crawler"
         }
   ],
   "require": {
     "sunra/php-simple-html-dom-parser": "1.5.*",
-    "daniel-hinchliff/php_web_crawler": "1.*.*"
+    "daniel-hinchliff/php-web-crawler": "1.*.*"
   },
   "require-dev": {
-    "phpunit/phpunit": "4.*"
+    "phpunit/phpunit": "6.*"
   },
   "autoload": {
         "psr-4": {
